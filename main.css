@@ -1,0 +1,560 @@
+/* =========================
+   HERO
+========================= */
+
+
+.hero {
+
+    height:100vh;
+
+    background:
+
+    linear-gradient(
+        rgba(0,90,169,.8),
+        rgba(0,90,169,.8)
+    ),
+
+    url("../images/hero.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+}
+
+
+
+.hero p {
+
+    font-size:1.4rem;
+
+    margin:25px 0;
+
+}
+
+
+
+.hero-buttons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.btn-primary,
+.btn-secondary {
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+
+.btn-primary {
+
+    background:var(--yellow);
+
+    color:black;
+
+}
+
+
+
+.btn-secondary {
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   WILLKOMMEN
+========================= */
+
+
+.welcome {
+
+    background:white;
+
+    padding:60px 0;
+
+    text-align:center;
+
+}
+
+
+
+.welcome p {
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+
+
+/* =========================
+   TEAMS
+========================= */
+
+
+.teams {
+
+    padding:60px 0;
+
+}
+
+
+
+.team-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.team-card {
+
+    background:white;
+
+    padding:35px 30px;
+
+    border-radius:20px;
+
+    border-top:8px solid var(--yellow);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+.team-card h3 {
+
+    color:var(--blue);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.team-card p {
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+.team-card strong {
+
+    color:var(--blue);
+
+}
+
+
+
+.team-link {
+
+    display:inline-block;
+
+    background:var(--blue);
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+.no-link {
+
+    display:inline-block;
+
+    background:var(--light);
+
+    color:var(--blue);
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.mobile-card {
+    display:none;
+}
+
+
+
+/* =========================
+   TRAININGSTABELLE
+========================= */
+
+
+.training {
+
+    background:white;
+
+    padding:60px 0;
+
+}
+
+
+
+.training table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    table-layout:fixed;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.training th {
+
+    background:var(--blue);
+
+    color:white;
+
+}
+
+
+
+.training th,
+.training td {
+
+    padding:18px;
+
+    text-align:center;
+
+    vertical-align:top;
+
+}
+
+/* Mannschaftsname vertikal mittig */
+
+.training td:first-child {
+
+    vertical-align: middle;
+
+}
+
+
+
+.training th:nth-child(1),
+.training td:nth-child(1) {
+
+    width:20%;
+
+}
+
+
+
+.training th:nth-child(2),
+.training td:nth-child(2),
+.training th:nth-child(3),
+.training td:nth-child(3) {
+
+    width:40%;
+
+}
+
+
+
+.training tr:nth-child(even) {
+
+    background:#f1f1f1;
+
+}
+
+
+
+.training-info {
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.location {
+
+    color:var(--blue);
+
+    text-decoration:none;
+
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+
+.features {
+
+    padding:60px 0;
+
+}
+
+
+
+.feature-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.feature-grid div {
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.features .icon {
+
+    width:45px;
+
+    height:45px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* =========================
+   KONTAKT
+========================= */
+
+
+.contact {
+
+    background:white;
+
+    padding:80px 0;
+
+}
+
+
+
+form {
+
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+input,
+select,
+textarea {
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    transition:.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline:none;
+    border-color:var(--blue);
+    box-shadow:0 0 0 3px rgba(0,90,169,.15);
+}
+
+
+
+form button {
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+
+    background:var(--yellow);
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+form button .icon {
+
+    width:16px;
+    height:16px;
+
+    display:block;
+
+}
+
+.contact label {
+
+    font-weight:600;
+    color:var(--blue);
+
+}
+
+
+.contact textarea {
+
+    resize:vertical;
+
+}
+
+
+.privacy {
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:.9rem;
+
+    font-weight:400 !important;
+
+}
+
+
+.privacy a {
+
+    color:var(--blue);
+    font-weight:600;
+    margin:0 4px;
+
+}
+
+/* =========================
+   DESKTOP HOVER EFFEKTE
+========================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .nav-links a:hover,
+    .footer-links a:hover {
+        color: var(--yellow);
+    	text-decoration: underline;
+    }
+
+    .team-card:hover,
+    .feature-grid div:hover {
+        transform: translateY(-8px);
+    }
+
+    .team-link:hover {
+        background: var(--yellow);
+        color: black;
+    }
+
+    .location:hover {
+        color: var(--dark-yellow);
+        text-decoration: underline;
+    }
+
+    /* BUTTON FEEDBACK */
+
+    .btn-nav:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    form button:hover {
+        transform: translateY(-3px);
+    }
+
+}

@@ -1,0 +1,71 @@
+/* =========================
+   RECHTLICHE SEITEN
+========================= */
+
+.legal {
+    padding:120px 0 80px;
+    background:var(--white);
+}
+
+.legal h1 {
+    color:var(--blue);
+    margin-bottom:40px;
+    overflow-wrap:break-word;
+}
+
+.legal h2 {
+    color:var(--blue);
+    text-align:left;
+    font-size:1.5rem;
+    margin:35px 0 15px;
+    overflow-wrap:break-word;
+}
+
+.legal p {
+    line-height:1.8;
+    overflow-wrap:break-word;
+    word-break:break-word;
+}
+
+.legal a {
+    color:var(--blue);
+    text-decoration:none;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
+
+.legal a:hover {
+    text-decoration:underline;
+}
+
+.legal ul {
+    margin:20px 0;
+    padding-left:25px;
+}
+
+.legal li {
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px) {
+
+    .legal {
+        padding:120px 0;
+    }
+
+    .legal h1 {
+        font-size:2rem;
+    }
+
+    .legal h2 {
+        font-size:1.2rem;
+        margin:30px 0 12px;
+    }
+
+}
