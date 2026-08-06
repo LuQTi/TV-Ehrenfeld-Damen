@@ -167,6 +167,8 @@ header {
 
 
 .logo {
+	
+	grid-column:1;
 
     display:flex;
 
@@ -226,6 +228,8 @@ header {
 
 
 .btn-nav {
+	
+	grid-column:3;
 
     background:var(--yellow);
 
@@ -277,7 +281,7 @@ footer {
 
     margin:0 15px;
 
-    text-decoration:none;
+    text-decoration:underline;
 
 }
 
