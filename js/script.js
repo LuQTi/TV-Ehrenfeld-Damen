@@ -18,47 +18,6 @@ window.scrollTo(0, 0);
 
 
 /* =========================
-   MOBILE NAVIGATION
-========================= */
-
-
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-
-if (menuToggle && navLinks) {
-
-
-    menuToggle.addEventListener("click", () => {
-
-        navLinks.classList.toggle("active");
-
-    });
-
-
-}
-
-
-
-document.querySelectorAll(".nav-links a")
-.forEach(link => {
-
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("active");
-
-    });
-
-
-});
-
-
-
-
-
-
-/* =========================
    TEAMS AUS teams.js LADEN
 ========================= */
 
@@ -232,6 +191,9 @@ if(infoButton){
         document
             .getElementById("teamModal")
             .classList.add("show");
+            
+        document.body.classList.add("no-scroll"); 
+
 
     });
 
@@ -548,28 +510,30 @@ ${message}`;
 
 }
 
-const modal =
-document.getElementById("teamModal");
+/* =========================
+   MODAL (ÖFFNEN, SCHLIESSEN & SCROLL-SPERRE)
+========================= */
+
+const modal = document.getElementById("teamModal");
 
 if(modal){
 
-    const closeButton =
-    modal.querySelector(".close-modal");
+    const closeButton = modal.querySelector(".close-modal");
 
-    closeButton.addEventListener("click", () => {
-
+    // Funktion zum Schließen des Modals & Aktivieren des Scrollens
+    const closeModalWindow = () => {
         modal.classList.remove("show");
+        document.body.classList.remove("no-scroll"); // Gibt das Scrollen der Seite wieder frei
+    };
 
-    });
+    // Klick auf das "X" schließt das Modal
+    closeButton.addEventListener("click", closeModalWindow);
 
+    // Klick auf den dunklen Hintergrund schließt das Modal
     modal.addEventListener("click", (event) => {
-
         if(event.target === modal){
-
-            modal.classList.remove("show");
-
+            closeModalWindow();
         }
-
     });
 
 }
